@@ -1,9 +1,3 @@
----
-title: README
----
-
-
-
 # **B6B39ZWA Foundations of Web Applications**
 
 Winter Semester 2025 - Final Project for B6B39ZWA Foundations of Web Applications
