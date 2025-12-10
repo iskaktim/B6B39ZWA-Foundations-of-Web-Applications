@@ -1,0 +1,503 @@
+@media print {
+
+    header,
+    footer,
+    .sidebar,
+    .post-actions,
+    .comment-actions,
+    #pagination,
+    #paginationComments,
+    .button,
+    .button-link {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container,
+    .container-add {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .section,
+    .section-add,
+    .content {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: none !important;
+        background: #fff !important;
+    }
+
+    .post,
+    .post-detail,
+    .comment {
+        margin-bottom: 1.2rem;
+        padding: 0;
+        border: none;
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    margin: 0;
+    color: #333;
+}
+
+body.auth {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.add-post footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+header {
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.register,
+.login {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.auth h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.auth label {
+    display: block;
+    text-align: left;
+    margin-bottom: 2px;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.auth input {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 2px 0 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.auth button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.auth a {
+    color: #000;
+    text-decoration: none;
+}
+
+.auth a:hover {
+    text-decoration: underline;
+}
+
+
+.button {
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.post-actions button,
+.comment-actions button,
+.save-post-btn,
+.cancel-post-btn,
+.delete-post-image-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+}
+
+.auth button:hover,
+.button:hover,
+.post-actions button:hover,
+.comment-actions button:hover,
+.save-post-btn:hover,
+.cancel-post-btn:hover,
+.delete-post-image-btn:hover {
+    background: #333;
+}
+
+.button-link {
+    display: inline-block;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: inherit;
+    font-weight: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.button-link:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: calc(100vh - 120px);
+}
+
+.section {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.container-add {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 4rem;
+}
+
+.section-add {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1100px;
+    margin-bottom: 1rem;
+}
+
+
+.sidebar {
+    background: #fff;
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.sidebar nav a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sidebar nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    color: #555;
+    bottom: 0;
+}
+
+.required {
+    color: red;
+}
+
+.page-info {
+    margin-left: 15px;
+    color: #666;
+    font-size: 14px;
+}
+
+#pagination,
+#paginationComments {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#pagination button,
+#paginationComments button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    background: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#pagination button:hover,
+#paginationComments button:hover {
+    background: #f5f5f5;
+}
+
+#pagination button.active-page,
+#paginationComments button.active-page {
+    background: #000000;
+    color: white;
+    border-color: #000000;
+}
+
+.message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.message.success {
+    color: #0a7d26;
+}
+
+.message.error {
+    color: #cc0000;
+}
+
+.message.info {
+    color: #555;
+}
+
+
+#messages {
+    margin-bottom: 15px;
+}
+
+#messages ul {
+    margin: 0 0 10px 20px;
+    padding: 0;
+}
+
+.required-info {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+}
+
+#profileAvatar {
+    width: 170px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+.post-image {
+    width: 190px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+#adminLink {
+    display: none;
+}
+
+.post-link {
+    display: block;
+    color: #000;
+    text-decoration: underline;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.admin-table th {
+    background: #f7f7f7;
+    font-weight: bold;
+}
+
+.admin-table tr:last-child td {
+    border-bottom: none;
+}
+
+.admin-table td:nth-child(1) {
+    width: 40px;
+}
+
+.admin-table td:nth-child(6) {
+    width: 200px;
+}
+
+.post-header-add {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-header-add h2 {
+    margin-bottom: 0.1rem;
+}
+
+.post-content-add {
+    margin-top: 0.3rem;     
+    margin-bottom: 0.6rem;  
+    line-height: 1.45;      
+}
+
+.comment-meta {
+    font-size: 0.9rem;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment-content {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.edit-comment-textarea, .comment-form textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    resize: vertical;
+    min-height: 60px;
+    margin-bottom: 0.5rem;
+}
+
+.edit-post-title, .add-post-title {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.edit-post-textarea, .add-post-textarea {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    resize: vertical;
+}
+
+.edit-comment-actions button {
+    background: #000;
+    color: #fff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.edit-comment-actions button:hover {
+    background: #333;
+}
+
+.login-to-comment a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+.dashboard-box {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 340px;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.dashboard-text {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.4rem;
+    margin-top: 1rem;
+}
+
+.dashboard-text a {
+    text-decoration: underline;
+}

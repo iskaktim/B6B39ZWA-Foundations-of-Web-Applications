@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="auth">
+
+    <div class="login">
+        <h2 class="auth">Login</h2>
+
+        <form id="loginForm">
+            <label for="username" class="auth">Username: <span class="required">*</span></label>
+            <input type="text" id="username" placeholder="Username" class="auth" required>
+
+            <label for="password" class="auth">Password: <span class="required">*</span></label>
+            <input type="password" id="password" placeholder="Password" class="auth" required>
+
+            <button type="submit" class="auth">Login</button>
+
+            <span class="required-info">
+                Fields marked with <span class="required">*</span> are required.
+            </span>
+        </form>
+    </div>
+
+    <div class="message">
+        Don't have an account? <a href="register.html" class="auth">Register</a><br>
+        Log in as a <a href="../index.html" class="auth">Guest</a>
+    </div>
+
+    <script src="js/staticFunctions.js?"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>

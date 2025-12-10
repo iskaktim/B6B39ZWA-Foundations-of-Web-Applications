@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add a New Post</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="add-post">
+
+    <main class="container-add">
+        <section class="section-add">
+            <h2>Add a New Post</h2>
+
+            <form id="postForm">
+                <div class="form">
+                    <label for="title">Title: <span class="required">*</span></label>
+                    <input type="text" id="title" class="add-post-title" name="title" placeholder="Enter title..."
+                        required>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="content">Content: <span class="required">*</span></label>
+                    <textarea id="content" class="add-post-textarea" name="content" placeholder="Write your post..."
+                        required></textarea>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="image">Attach image (JPG, JPEG, PNG, GIF(2 MB)): </label>
+                    <input type="file" id="image" name="image" accept=".jpg,.jpeg,.png,.gif">
+                </div>
+                <br>
+
+                <button type="submit" class="button">Add Post</button>
+                <span class="required-info">
+                    Fields marked with <span class="required">*</span> are required.
+                </span>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/staticFunctions.js"></script>
+    <script src="js/add_post.js"></script>
+</body>
+
+</html>
