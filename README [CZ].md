@@ -34,7 +34,6 @@ Navigace se dynamicky mění podle toho, zda je uživatel přihlášen a jakou m
 * Profil umožňuje upravit uživatelské jméno, e-mail, heslo i avatar.
 * Avatar lze nahrát nebo odstranit; pokud není nastaven, použije se výchozí obrázek.
 
----
 
 ### **Post Management**
 
@@ -69,7 +68,6 @@ Navigace se dynamicky mění podle toho, zda je uživatel přihlášen a jakou m
 * Server kontroluje typ souboru a ukládá nahrané soubory do vyhrazených složek.
 * K dispozici je výchozí avatar.
 
----
 
 ### **Access Control**
 
